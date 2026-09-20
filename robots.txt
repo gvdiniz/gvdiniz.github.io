@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gvdiniz.github.io/sitemap.xml

@@ -1,0 +1,468 @@
+/* Static recreation of the clean WordPress layout shown in the reference screenshot. */
+
+:root {
+  --page-width: 660px;
+  --text: #111;
+  --muted: #555;
+  --soft: #777;
+  --gap: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.48;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-shell {
+  width: min(var(--page-width), calc(100% - 36px));
+  margin: 0 auto;
+  padding: 52px 0 70px;
+}
+
+.intro h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.bio {
+  margin: 0;
+  max-width: 620px;
+  font-size: 13px;
+}
+
+.socials {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  margin: 14px 0 25px;
+}
+
+.socials a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.socials a:nth-child(1) {
+  background: #0a66c2;
+  color: white;
+}
+
+.socials a:nth-child(2) {
+  background: #d62976;
+  color: white;
+}
+
+.socials a:nth-child(3) {
+  background: #eee;
+  color: #333;
+}
+
+.socials a:hover {
+  transform: translateY(-1px);
+  opacity: .85;
+}
+
+.socials svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.portrait {
+  margin: 0 auto 31px;
+  width: min(420px, 100%);
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  margin-top: 28px;
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.education {
+  width: min(520px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.education-row {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 24px;
+  align-items: center;
+  min-height: 86px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.education-row + .education-row {
+  margin-top: 10px;
+}
+
+.school-logo {
+  display: grid;
+  place-items: center;
+}
+
+.school-logo img {
+  max-width: 58px;
+  max-height: 58px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.education-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.education-copy strong {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.education-copy em {
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.education-copy > span {
+  margin-top: 1px;
+  font-size: 12px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 2px 12px;
+  margin: 0 -2px;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 2px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #d7d7d7 transparent;
+}
+
+.card-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.card-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-grid::-webkit-scrollbar-thumb {
+  background: #d7d7d7;
+  border-radius: 999px;
+}
+
+.media-card {
+  display: block;
+  flex: 0 0 205px;
+  width: 205px;
+  color: #111;
+  text-decoration: none;
+  scroll-snap-align: start;
+}
+
+.media-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.42 / 1;
+  object-fit: cover;
+  margin-bottom: 6px;
+  background: #f3f3f3;
+}
+
+.media-card span {
+  display: block;
+  font-size: 12px;
+  line-height: 1.38;
+  text-decoration: none;
+}
+
+.media-card:hover span {
+  opacity: .62;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 42px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  color: #666;
+  font-size: 11px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 1100px) {
+  .site-shell {
+    padding-top: 72px;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 14px;
+  }
+
+  .site-shell {
+    width: min(100% - 30px, var(--page-width));
+    padding-top: 32px;
+  }
+
+  .intro h1 {
+    font-size: 22px;
+  }
+
+  .bio {
+    font-size: 14px;
+  }
+
+  .portrait {
+    width: min(100%, 390px);
+  }
+
+  .education-row {
+    grid-template-columns: 62px 1fr;
+    gap: 16px;
+  }
+
+
+  .media-card span {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .education-row {
+    grid-template-columns: 56px 1fr;
+  }
+}
+
+
+/* Refined Helvetica treatment */
+.bio,
+.education-copy,
+.media-card span,
+footer {
+  font-weight: 400;
+}
+
+.education-copy strong,
+.section h2,
+.intro h1 {
+  font-weight: 500;
+}
+
+.media-card span,
+.education-row,
+footer a {
+  text-decoration: none;
+}
+
+.media-card {
+  transition: opacity 140ms ease;
+}
+
+.media-card:hover {
+  opacity: .68;
+}
+
+
+/* Horizontal article/media carousels */
+@media (max-width: 620px) {
+  .card-grid {
+    gap: 13px;
+    margin-right: calc((100vw - 100%) / -2);
+    padding-right: 20px;
+  }
+
+  .media-card {
+    flex-basis: min(72vw, 245px);
+    width: min(72vw, 245px);
+  }
+}
+
+@media (min-width: 621px) {
+  .card-grid {
+    cursor: grab;
+  }
+}
+
+
+/* Stronger identity + section headings */
+.intro h1,
+.section h2 {
+  font-weight: 700;
+}
+
+/* Expanded social/profile buttons */
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  margin: 14px 0 25px;
+}
+
+.socials a {
+  width: 46px;
+  height: 38px;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+  background: #eef1f4 !important;
+  color: #111 !important;
+  text-decoration: none;
+  transition: transform 120ms ease, background-color 120ms ease;
+}
+
+.socials a:hover {
+  transform: translateY(-1px);
+  background: #e3e7eb !important;
+  opacity: 1;
+}
+
+.social-icon {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  line-height: 1;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+.linktree-mark {
+  border-radius: 6px;
+  background: #43e66b;
+  color: #080808;
+  font-size: 22px;
+}
+
+.linkedin-mark {
+  border-radius: 4px;
+  background: #0a66c2;
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: -0.05em;
+}
+
+.oab-mark {
+  border-radius: 50%;
+  border: 2px solid #b89545;
+  background: #163e78;
+  color: #fff;
+  font-size: 8px;
+  letter-spacing: .02em;
+}
+
+.researchgate-mark {
+  background: #fff;
+  color: #2f2f2f;
+  border: 1px solid #d7d7d7;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.researchgate-mark sup {
+  font-size: 8px;
+  margin-left: 1px;
+  margin-top: -9px;
+}
+
+.scholar-mark {
+  color: #5487d9;
+}
+
+.scholar-mark svg {
+  width: 27px;
+  height: 27px;
+  fill: currentColor;
+}
+
+.instagram-mark {
+  border-radius: 7px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d 55%, #fcb045);
+  color: #fff;
+}
+
+.instagram-mark svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.github-mark {
+  color: #111;
+}
+
+.github-mark svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+}
+
+@media (max-width: 420px) {
+  .socials {
+    gap: 7px;
+  }
+
+  .socials a {
+    width: 42px;
+    height: 36px;
+  }
+}
