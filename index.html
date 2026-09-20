@@ -34,9 +34,35 @@
 >
 
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://gvdiniz.github.io/#de-paula-kraft",
+      "name": "De Paula Kraft Sociedade de Advogados",
+      "url": "https://depaulakraft.com.br/",
+      "member": {
+        "@type": "EmployeeRole",
+        "roleName": "Advogada Associada",
+        "member": {
+          "@id": "https://gvdiniz.github.io/#giovanna"
+        }
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://gvdiniz.github.io/#revista-sao-francisco",
+      "name": "Revista Acadêmica São Francisco",
+      "url": "https://direito.usp.br/area-do-aluno/5ffad5009b33-revista-academica-sao-francisco",
+      "member": {
+        "@type": "OrganizationRole",
+        "roleName": "Editora-Chefe",
+        "member": {
+          "@id": "https://gvdiniz.github.io/#giovanna"
+        }
+      }
+    },
     {
       "@type": "WebSite",
       "@id": "https://gvdiniz.github.io/#website",
@@ -49,6 +75,10 @@
       "@id": "https://gvdiniz.github.io/#profile",
       "url": "https://gvdiniz.github.io/",
       "name": "Giovanna Diniz Eduardo",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg"
+      },
       "mainEntity": {
         "@type": "Person",
         "@id": "https://gvdiniz.github.io/#giovanna",
@@ -58,14 +88,20 @@
           "gvdiniz"
         ],
         "url": "https://gvdiniz.github.io/",
-    "image": {
-  "@type": "ImageObject",
-  "url": "https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg",
-  "contentUrl": "https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg",
-  "caption": "Giovanna Diniz Eduardo"
-},
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg",
+          "contentUrl": "https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg",
+          "caption": "Giovanna Diniz Eduardo"
+        },
+        "affiliation": {
+          "@id": "https://gvdiniz.github.io/#revista-sao-francisco"
+        },
+        "worksFor": {
+          "@id": "https://gvdiniz.github.io/#de-paula-kraft"
+        },
         "jobTitle": "Advogada atuante em Direito Digital",
-        "description": "Advogada formada pela Universidade de São Paulo (FDUSP), atuante em Direito Digital. Vencedora do III Prêmio Danilo Doneda (ANPD). Contato: gvndiniz@hotmail.com",
+        "description": "Advogada formada pela Universidade de São Paulo (FDUSP), atuante em Direito Digital. Vencedora do III Prêmio Danilo Doneda (ANPD).",
         "sameAs": [
           "https://github.com/gvdiniz",
           "https://www.linkedin.com/in/gvdiniz/",
@@ -86,8 +122,8 @@
         },
         "award": [
           "Vencedora do III Prêmio Danilo Doneda (ANPD) - 2025",
-          "Vencedora na III Competição de Direito, Arbitragem e Tecnologia (Coditech Moot) organizado pela Associação Lawgorithm - 2025",
-          "Vencedora no I Concurso Imagens em Patrimônio organizado pelo Centro de Preservação Cultural da Universidade de São Paulo (CPC-USP) - 2023"
+          "Vencedora na III Competição de Direito, Arbitragem e Tecnologia (CoDiTech Moot), organizada pela Associação Lawgorithm - 2025",
+          "Vencedora no I Concurso Imagens em Patrimônio, organizado pelo Centro de Preservação Cultural da Universidade de São Paulo (CPC-USP) - 2023"
         ],
         "knowsAbout": [
           "Direito Digital",
@@ -100,299 +136,315 @@
           "Deceptive Design Patterns",
           "Governança de Dados",
           "Governança de Inteligência Artificial",
-          "AI Governance"
+          "AI Governance",
+          "Law",
+          "Direito"
         ],
         "subjectOf": [
-  {
-    "@type": "NewsArticle",
-    "headline": "Consentimento como base legal é tema de trabalho vencedor",
-    "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/consentimento-como-base-legal-e-tema-do-trabalho-vencedor?",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Agência Nacional de Proteção de Dados"
-    },
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-  {
-    "@type": "NewsArticle",
-    "headline": "Alunas da FDUSP são premiadas pela ANPD em concurso de monografia sobre proteção de dados e privacidade",
-    "url": "https://direito.usp.br/noticia/91f4500c8857-alunas-da-fdusp-sao-premiadas-pela-anpd-em-concurso-de-monografia-sobre-protecao-de-dados-e-privacidade",
-    "publisher": {
-      "@type": "CollegeOrUniversity",
-      "name": "Faculdade de Direito da Universidade de São Paulo"
-    },
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": Giovanna Diniz Eduardo foi a primeira colocada, com o trabalho intitulado "Consentimento como base legal em ambientes digitais: Dark Patterns, a ilusão da escolha"; e Isadora Valadares Assunção, segunda colocada, apresentou a pesquisa "Segredos de negócios e decisões automatizadas discriminatórias: impasses e soluções regulatórias.",
-    "url": "https://www.instagram.com/p/DRA7g9LDWvh/?img_index=1",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": A mesa de lançamento contou com as coordenadoras da revista, Giovanna Diniz e Sara Fernandes, além de Julia Midori, pesquisadora do Grupo Esperança Garcia, e alguns dos autores cujos trabalhos integram a edição.",
-    "url": "https://www.instagram.com/p/DG3xYhdPlyq/?img_index=1",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline":Ao final da terceira edição da competição, a equipe representante da FDUSP sagrou-se bicampeã. O grupo foi composto pelos treinadores Laura Ruescas, Silvia Resstel, Letícia Venturini e Rafael Lenzi, pelos pesquisadores Camila Guimarães Pinto, Giovanna Diniz, Marcos Luna e Melissa Oliveira, e pelos oradores Ana Teresa Ortiz, Cristiano Bacarim, Gabriel Hanna e Vinicius Demarzo.",
-    "url": "https://www.instagram.com/p/DF_Pfx_PO34/",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline":Na primeira edição, o concurso premiou a aluna Giovanna Diniz, da Faculdade de Direito da USP, na categoria "Imagens em Patrimônio",
-    "url": "https://www.instagram.com/p/C7hEYUROgaU/",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-  {
-    "@type": "SocialMediaPosting",
-    "headline": "Dia 6 - V Seminário de Pesquisa da Revista Res Severa Verum Gaudium “Revistas estudantis de direito: oportunidades de publicação e de construção de memória coletiva” - 12 de setembro de 2025 Palestrantes: Letícia Pádua Pereira (Revista dos Estudantes de Direito da Universidade de Brasília - UnB), Giovanna Diniz (Revista Acadêmica São Francisco - USP), Bianca Maria Aranha Villar (Revista Ratio Iuris - UFPB) e Maria Eduarda de Freitas Leitão (Revista Avant - UFSC) Abertura: Guilherme Leão Melo Mediação: Guilherme Lima Ferrugem Equipe: Sofia Giongo Martins Gomes e Mariana Armiliatto Pacheco A Revista agradece imensamente a todos os presentes!",
-    "url": "https://www.instagram.com/p/DPKTbcNidyp/?img_index=3",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": "Neste post, nossa editora Giovanna Diniz apresenta uma síntese visual da obra, dividida em cinco slides que destacam os pontos essenciais do livro",
-    "url": "https://www.instagram.com/p/DEYQZOuOvb2",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-     {
-    "@type": "SocialMediaPosting",
-    "headline": "É o caso da Tese de Láurea da @gvdiniz referente ao tema d' "A Mercantilização Dos Dados Pessoais Sob A Lente Do Fetichismo Da Mercadoria De Marx", pela Faculdade de Direito da Universidade de São Paulo",
-    "url": "https://www.instagram.com/p/DPLqUMCCERu",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": "O evento será uma oportunidade única para aprofundar essa discussão, contando com a participação das editoras e coordenadoras da RASF, Giovanna Diniz e Sara Fernandes, além de Julia Midori, pesquisadora do Grupo Esperança Garcia e de alguns dos autores cujos (maravilhosos) trabalhos integram esta edição",
-    "url": "https://www.instagram.com/p/DGlwj9vx9uP/",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": "1. Celebrações 1º Lugar: inscrição 611 - Giovanna Diniz Eduardo",
-    "url": "https://www.instagram.com/p/CuFhtYURCy9",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": "Alunas(os) da graduação USP Eduardo Oliveira Botelho Giovanna Diniz Eduardo",
-    "url": "https://www.instagram.com/p/C-TT3JmRWWO",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-     {
-    "@type": "SocialMediaPosting",
-    "headline": "Giovanna Diniz Eduardo foi a primeira colocada, com o trabalho intitulado "Consentimento como base legal em ambientes digitais: Dark Patterns, a ilusão da escolha"; e Isadora Valadares Assunção, segunda colocada, apresentou a pesquisa "Segredos de negócios e decisões automatizadas discriminatórias: impasses e soluções regulatórias".
-Durante o evento foi apresentado um balanço das entregas, consolidadas no documento Balanço Anual de Atividades 2025",
-    "url": "https://www.threads.com/@faculdade_de_direito_da_usp/post/DRA45LbgbBh/giovanna-diniz-eduardo-foi-a-primeira-colocada-com-o-trabalho-intitulado?hl=pt-br",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": "Em artigo exclusivo, as advogadas da equipe De Paula Kraft, Alice de Perdigão Lana e Giovanna Diniz, comentam a virada no direito digital brasileiro promovida pelos Decretos 12.975 e 12.976/2026: o que muda para as plataformas, o que vai além do decidido pelo STF e o que ainda aguarda regulamentação.",
-    "url": "https://pt.linkedin.com/posts/de-paula-kraft_decreto-do-mci-e-decreto-contra-misoginia-activity-7481347298875150336-6Gxb",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-    "@type": "SocialMediaPosting",
-    "headline": "O De Paula Kraft Advogados anuncia a chegada de três novos integrantes à sua equipe: os advogados Giovanna Diniz e João Ivo Machado Ramalho de Almeida e a estagiária Debora Alves dos Santos.",
-    "url": "https://pt.linkedin.com/posts/de-paula-kraft_equipe-activity-7464631383466926080-wKw-",
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-  {
-    "@type": "NewsArticle",
-    "headline": "\"Foi uma experiência única, de muito aprendizado, individualmente e coletivamente\", assinalam vencedores da CoDiTech",
-    "url": "https://direito.usp.br/noticia/bba1823bdfca-foi-uma-experiencia-unica-de-muito-aprendizado-individualmente-e-coletivamente-assinalam-vencedores-da-coditech",
-    "publisher": {
-      "@type": "CollegeOrUniversity",
-      "name": "Faculdade de Direito da Universidade de São Paulo"
-    },
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-  "@type": "NewsArticle",
-  "headline": "ANPD | Consentimento como base legal é tema do trabalho vencedor",
-  "url": "https://legismap.com.br/conteudos/artigos-e-noticias/anpd-consentimento-como-base-legal-e-tema-do-trabalho-vencedor",
-  "datePublished": "2025-10-03",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Legismap"
-  },
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-}
-     {
-    "@type": "NewsArticle",
-    "headline": "Participe da campanha #CartaPorUmGovernoEstadualAberto",
-    "url": "https://ok.org.br/noticia/okbr-lanca-campanha-por-comprometimento-de-candidaturas-com-cidades-mais-abertas-2/",
-    "datePublished": "2026-08-20",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Open Knowledge Brasil"
-    },
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-    {
-  "@type": "WebPage",
-  "name": "De Paula Kraft Advogados - Legal Affairs",
-  "url": "https://theorg.com/org/de-paula-kraft-advogados/teams/legal-affairs",
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-}
-    {
-  "@type": "WebPage",
-  "name": "Profissionais - depaulakraft",
-  "url": "https://depaulakraft.com.br/profissionais/",
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-}
-    {
-  "@type": "WebPage",
-  "name": "Resultado Seleção GPTC-USP - 2o semestre 2024",
-  "url": "https://www.jorgesoutomaior.com/blog/resultado-selecao-gptc-usp-2o-semestre-2024",
-  "datePublished": "2024-08-05",
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-}
-    {
-  "@type": "WebPage",
-  "name": "ENCONTRO IBRAC Concorrência Econômica e Plataformas Digitais",
-  "url": "https://www.ibrac.org.br/produto/encontro-ibrac-concorrencia-economica-e-plataformas-digitais/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "IBRAC"
-  },
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-}
-    {
-  "@type": "NewsArticle",
-  "headline": "Pesquisador de Santa Cruz é um dos vencedores em concurso nacional da ANPD",
-  "url": "https://www.gaz.com.br/pesquisador-de-santa-cruz-e-um-dos-vencedores-em-concurso-nacional-da-anpd/",
-  "datePublished": "2025-10-12",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Gazeta do Sul"
-  },
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-},
-    {
-  "@type": "WebPage",
-  "name": "Imagens do Patrimônio — I Concurso de Fotografias do Patrimônio Cultural da USP",
-  "url": "https://cpc.webhostusp.sti.usp.br/index.php/2023/03/22/imagens-do-patrimonio-i-concurso-de-fotografias-do-patrimonio-cultural-da-usp/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Centro de Preservação Cultural da Universidade de São Paulo"
-  },
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-},
-    {
-  "@type": "WebPage",
-  "name": "Confira a lista dos(as) selecionados(as) para participar do Lab 2023",
-  "url": "https://ibccrim.org.br/confira-a-lista-dosas-selecionadosas-para-participar-do-lab-2023/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Instituto Brasileiro de Ciências Criminais"
-  },
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-},
-{
-  "@type": "WebPage",
-  "name": "Agenda internacional do CADE",
-  "url": "https://ibrac.org.br/produto/agenda-internacional-do-cade/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "IBRAC"
-  },
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-},
-{
-  "@type": "WebPage",
-  "name": "Como a economia dialoga com a prática do antitruste?",
-  "url": "https://ibrac.org.br/produto/eventos/como-a-economia-dialoga-com-a-pratica-do-antitruste/",
-  "publisher": {
-    "@type": "Organization",
-    "name": "IBRAC"
-  },
-  "about": {
-    "@id": "https://gvdiniz.github.io/#giovanna"
-  }
-}
-  {
-    "@type": "NewsArticle",
-    "headline": "A importância da reescrita jurídica para um Direito mais inclusivo é foco da 2ª edição da Revista Acadêmica São Francisco",
-    "url": "https://direito.usp.br/noticia/9ccac7e7e7b4-a-importancia-da-reescrita-juridica-para-um-direito-mais-inclusivo-e-foco-da-2-edicao-da-revista-academica-sao-francisco",
-    "publisher": {
-      "@type": "CollegeOrUniversity",
-      "name": "Faculdade de Direito da Universidade de São Paulo"
-    },
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  },
-  {
-    "@type": "NewsArticle",
-    "headline": "Concurso que premiou aluna da FDUSP, por fotografia nos atos de 11 de agosto, recebe inscrições para segunda edição",
-    "url": "https://direito.usp.br/noticia/0c885a16a474-concurso-que-premiou-aluna-da-fdusp-por-fotografia-nos-atos-de-11-de-agosto-recebe-inscricoes-para-segunda-edicao-",
-    "publisher": {
-      "@type": "CollegeOrUniversity",
-      "name": "Faculdade de Direito da Universidade de São Paulo"
-    },
-    "about": {
-      "@id": "https://gvdiniz.github.io/#giovanna"
-    }
-  }
-]
+          {
+            "@type": "NewsArticle",
+            "headline": "Consentimento como base legal é tema de trabalho vencedor",
+            "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/consentimento-como-base-legal-e-tema-do-trabalho-vencedor?",
+            "publisher": {
+              "@type": "GovernmentOrganization",
+              "name": "Autoridade Nacional de Proteção de Dados"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "Alunas da FDUSP são premiadas pela ANPD em concurso de monografia sobre proteção de dados e privacidade",
+            "url": "https://direito.usp.br/noticia/91f4500c8857-alunas-da-fdusp-sao-premiadas-pela-anpd-em-concurso-de-monografia-sobre-protecao-de-dados-e-privacidade",
+            "publisher": {
+              "@type": "CollegeOrUniversity",
+              "name": "Faculdade de Direito da Universidade de São Paulo"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Giovanna Diniz Eduardo foi a primeira colocada com trabalho sobre consentimento, dark patterns e escolha.",
+            "url": "https://www.instagram.com/p/DRA7g9LDWvh/?img_index=1",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Lançamento da Revista Acadêmica São Francisco com participação de Giovanna Diniz.",
+            "url": "https://www.instagram.com/p/DG3xYhdPlyq/?img_index=1",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Revista Acadêmica São Francisco",
+            "url": "https://direito.usp.br/area-do-aluno/5ffad5009b33-revista-academica-sao-francisco",
+            "publisher": {
+              "@type": "CollegeOrUniversity",
+              "name": "Faculdade de Direito da Universidade de São Paulo"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Equipe da FDUSP sagrou-se bicampeã na CoDiTech, com Giovanna Diniz entre os pesquisadores.",
+            "url": "https://www.instagram.com/p/DF_Pfx_PO34/",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Concurso de patrimônio cultural da USP premiou Giovanna Diniz na categoria Imagens em Patrimônio.",
+            "url": "https://www.instagram.com/p/C7hEYUROgaU/",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "V Seminário de Pesquisa da Revista Res Severa Verum Gaudium com participação de Giovanna Diniz.",
+            "url": "https://www.instagram.com/p/DPKTbcNidyp/?img_index=3",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Síntese visual apresentada pela editora Giovanna Diniz.",
+            "url": "https://www.instagram.com/p/DEYQZOuOvb2",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Tese de Láurea de Giovanna Diniz sobre mercantilização dos dados pessoais.",
+            "url": "https://www.instagram.com/p/DPLqUMCCERu",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Evento com participação das editoras e coordenadoras da Revista Acadêmica São Francisco, Giovanna Diniz e Sara Fernandes.",
+            "url": "https://www.instagram.com/p/DGlwj9vx9uP/",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Celebrações — 1º Lugar: inscrição 611 — Giovanna Diniz Eduardo.",
+            "url": "https://www.instagram.com/p/CuFhtYURCy9",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Seleção GPTC-USP — alunos da graduação USP: Eduardo Oliveira Botelho e Giovanna Diniz Eduardo.",
+            "url": "https://www.instagram.com/p/C-TT3JmRWWO",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "Giovanna Diniz Eduardo foi a primeira colocada com trabalho sobre consentimento e dark patterns.",
+            "url": "https://www.threads.com/@faculdade_de_direito_da_usp/post/DRA45LbgbBh/giovanna-diniz-eduardo-foi-a-primeira-colocada-com-o-trabalho-intitulado?hl=pt-br",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "De Paula Kraft: artigo de Alice de Perdigão Lana e Giovanna Diniz sobre os Decretos 12.975 e 12.976/2026.",
+            "url": "https://pt.linkedin.com/posts/de-paula-kraft_decreto-do-mci-e-decreto-contra-misoginia-activity-7481347298875150336-6Gxb",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "SocialMediaPosting",
+            "headline": "De Paula Kraft Advogados anuncia a chegada de Giovanna Diniz à equipe.",
+            "url": "https://pt.linkedin.com/posts/de-paula-kraft_equipe-activity-7464631383466926080-wKw-",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Profissionais - De Paula Kraft Advogados",
+            "url": "https://depaulakraft.com.br/profissionais/",
+            "publisher": {
+              "@id": "https://gvdiniz.github.io/#de-paula-kraft"
+            },
+            "mentions": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "Foi uma experiência única, de muito aprendizado, individualmente e coletivamente, assinalam vencedores da CoDiTech",
+            "url": "https://direito.usp.br/noticia/bba1823bdfca-foi-uma-experiencia-unica-de-muito-aprendizado-individualmente-e-coletivamente-assinalam-vencedores-da-coditech",
+            "publisher": {
+              "@type": "CollegeOrUniversity",
+              "name": "Faculdade de Direito da Universidade de São Paulo"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "ANPD | Consentimento como base legal é tema do trabalho vencedor",
+            "url": "https://legismap.com.br/conteudos/artigos-e-noticias/anpd-consentimento-como-base-legal-e-tema-do-trabalho-vencedor",
+            "datePublished": "2025-10-03",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Legismap"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "Participe da campanha #CartaPorUmGovernoEstadualAberto",
+            "url": "https://ok.org.br/noticia/okbr-lanca-campanha-por-comprometimento-de-candidaturas-com-cidades-mais-abertas-2/",
+            "datePublished": "2026-08-20",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Open Knowledge Brasil"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "De Paula Kraft Advogados - Legal Affairs",
+            "url": "https://theorg.com/org/de-paula-kraft-advogados/teams/legal-affairs",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Resultado Seleção GPTC-USP - 2º semestre 2024",
+            "url": "https://www.jorgesoutomaior.com/blog/resultado-selecao-gptc-usp-2o-semestre-2024",
+            "datePublished": "2024-08-05",
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "ENCONTRO IBRAC Concorrência Econômica e Plataformas Digitais",
+            "url": "https://www.ibrac.org.br/produto/encontro-ibrac-concorrencia-economica-e-plataformas-digitais/",
+            "publisher": {
+              "@type": "Organization",
+              "name": "IBRAC"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "Pesquisador de Santa Cruz é um dos vencedores em concurso nacional da ANPD",
+            "url": "https://www.gaz.com.br/pesquisador-de-santa-cruz-e-um-dos-vencedores-em-concurso-nacional-da-anpd/",
+            "datePublished": "2025-10-12",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Gazeta do Sul"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Imagens do Patrimônio — I Concurso de Fotografias do Patrimônio Cultural da USP",
+            "url": "https://cpc.webhostusp.sti.usp.br/index.php/2023/03/22/imagens-do-patrimonio-i-concurso-de-fotografias-do-patrimonio-cultural-da-usp/",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Centro de Preservação Cultural da Universidade de São Paulo"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Confira a lista dos(as) selecionados(as) para participar do Lab 2023",
+            "url": "https://ibccrim.org.br/confira-a-lista-dosas-selecionadosas-para-participar-do-lab-2023/",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Instituto Brasileiro de Ciências Criminais"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Agenda internacional do CADE",
+            "url": "https://ibrac.org.br/produto/agenda-internacional-do-cade/",
+            "publisher": {
+              "@type": "Organization",
+              "name": "IBRAC"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "name": "Como a economia dialoga com a prática do antitruste?",
+            "url": "https://ibrac.org.br/produto/eventos/como-a-economia-dialoga-com-a-pratica-do-antitruste/",
+            "publisher": {
+              "@type": "Organization",
+              "name": "IBRAC"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "A importância da reescrita jurídica para um Direito mais inclusivo é foco da 2ª edição da Revista Acadêmica São Francisco",
+            "url": "https://direito.usp.br/noticia/9ccac7e7e7b4-a-importancia-da-reescrita-juridica-para-um-direito-mais-inclusivo-e-foco-da-2-edicao-da-revista-academica-sao-francisco",
+            "publisher": {
+              "@type": "CollegeOrUniversity",
+              "name": "Faculdade de Direito da Universidade de São Paulo"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          },
+          {
+            "@type": "NewsArticle",
+            "headline": "Concurso que premiou aluna da FDUSP, por fotografia nos atos de 11 de agosto, recebe inscrições para segunda edição",
+            "url": "https://direito.usp.br/noticia/0c885a16a474-concurso-que-premiou-aluna-da-fdusp-por-fotografia-nos-atos-de-11-de-agosto-recebe-inscricoes-para-segunda-edicao-",
+            "publisher": {
+              "@type": "CollegeOrUniversity",
+              "name": "Faculdade de Direito da Universidade de São Paulo"
+            },
+            "about": {
+              "@id": "https://gvdiniz.github.io/#giovanna"
+            }
+          }
+        ]
       }
     }
   ]
@@ -456,8 +508,8 @@ Durante o evento foi apresentado um balanço das entregas, consolidadas no docum
   <img
     src="images/giovanna-diniz-eduardo.jpg"
     alt="Giovanna Diniz Eduardo, advogada atuante em Direito Digital"
-    width="1048"
-    height="1397"
+    width="474"
+    height="625"
   >
 </figure>
 
