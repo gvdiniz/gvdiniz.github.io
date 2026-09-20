@@ -6,10 +6,30 @@
 
   <url>
     <loc>https://gvdiniz.github.io/</loc>
+    <lastmod>2026-09-20</lastmod>
 
     <image:image>
       <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg</image:loc>
-      <image:title>Giovanna Diniz Eduardo</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-anpd-gov.jpg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-anpd.jpeg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-res-severa.jpeg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-coditech.jpg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-rasf.jpeg</image:loc>
     </image:image>
 
   </url>
