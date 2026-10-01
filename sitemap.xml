@@ -2,15 +2,34 @@
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <url>
     <loc>https://gvdiniz.github.io/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <image:image><image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg</image:loc></image:image>
-    <image:image><image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-anpd-gov.jpg</image:loc></image:image>
-    <image:image><image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-anpd.jpeg</image:loc></image:image>
-    <image:image><image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-res-severa.jpeg</image:loc></image:image>
-    <image:image><image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-coditech.jpg</image:loc></image:image>
-    <image:image><image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-rasf.jpeg</image:loc></image:image>
-    <image:image><image:loc>https://cloudfront-us-east-1.images.arcpublishing.com/estadao/KBVCXH4X6RFGLIBA7FJO7QECNE.jpg</image:loc></image:image>
+    <lastmod>2026-10-01</lastmod>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo.jpg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-anpd-gov.jpg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-anpd.jpeg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-res-severa.jpeg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-coditech.jpg</image:loc>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://gvdiniz.github.io/images/giovanna-diniz-eduardo-rasf.jpeg</image:loc>
+    </image:image>
+
   </url>
 </urlset>
