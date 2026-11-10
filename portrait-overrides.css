@@ -1,0 +1,51 @@
+/* Ajuste visual da foto de perfil e do cabecalho.
+   Este arquivo e carregado DEPOIS do styles.css original. */
+
+.site-shell > .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.site-shell > .intro > .portrait {
+  display: block;
+  float: none;
+  position: static;
+  width: 120px;
+  height: 120px;
+  max-width: none;
+  margin: 0 0 16px 0;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.site-shell > .intro > .portrait > img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 34%;
+}
+
+.site-shell > .intro > h1,
+.site-shell > .intro > .bio,
+.site-shell > .intro > .socials {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.site-shell > .intro > .socials {
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .site-shell > .intro > .portrait,
+  .site-shell > .intro > .portrait > img {
+    width: 104px;
+    height: 104px;
+  }
+}
